@@ -26,7 +26,7 @@ The following table lists the configurable parameters of the Spark operator char
 | `operatorImageName`       | The name of the operator image                               | `gcr.io/spark-operator/spark-operator` |
 | `operatorVersion`         | The version of the operator to install                       | `v2.4.0-v1beta1-0.8.1`                |
 | `imagePullPolicy`         | Docker image pull policy                                     | `IfNotPresent`                         |
-| `sparkJobNamespace`       | K8s namespace where Spark jobs are to be deployed            | ``                                     |
+| `sparkJobNamespace`       | K8s namespace where Spark jobs are to be deployed            | ""                                     |
 | `enableWebhook`           | Whether to enable mutating admission webhook                 | false                                  |
 | `enableMetrics`           | Whether to expose metrics to be scraped by Premetheus        | true                                   |
 | `controllerThreads`       | Number of worker threads used by the SparkApplication controller | 10                                 |
